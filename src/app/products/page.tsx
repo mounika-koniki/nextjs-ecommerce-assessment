@@ -25,7 +25,7 @@ export default async function ProductsPage({
 }: ProductsPageProps) {
   const { category, page } = await searchParams;
 
-  const currentPage = Number(page) || 1;
+  const currentPage = Number(page) || 1; 
   const productsPerPage = 8;
 
   const [products, categories] = await Promise.all([

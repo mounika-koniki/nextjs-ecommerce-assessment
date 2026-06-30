@@ -52,11 +52,12 @@ export async function getProducts(category?: string): Promise<Product[]> {
     : `${BASE_URL}/products`;
 
   try {
-    const response = await fetch(url, {
+   const response = await fetch(url, {
   cache: "no-store",
   headers: {
     Accept: "application/json",
-    "User-Agent": "Mozilla/5.0",
+    "User-Agent":
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/137.0.0.0 Safari/537.36",
   },
 
     });
